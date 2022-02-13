@@ -64,7 +64,7 @@ class ResultPage {
       }),
       refinementList({
         container: '#pricerange-facet',
-        attribute: 'price_range',
+        attribute: 'pricerange',
       }),
     ]);
   }

@@ -1,3 +1,13 @@
+# Dependencies for running the assessment locally
+
+I have implemented this assignment in a docker container. To start:
+
+Clone the repo and open it using a docker container
+Run the markdown.py script to process and transform the products.json index
+Front-end app:
+  Run npm install
+  Run npm start
+
 # Algolia TAM Assignment 
   
 This is the hiring assignment for the TAM Team at Algolia. It’s intended to mimic work you might do here, while giving us an understanding of your skills in:  
@@ -62,10 +72,12 @@ Changes in the frontend application:
   added Price Range facet panel container index.html and Price Range widget results-page.js
 
 Changes in the index configuration:
+  added name and description as searchable attributes in the index
   added popularity and rating fields (descending - assuming higher rating value is better) as custom ranking attribute
   added brand (searchable), categories, and price range attributes as facets
 
 Possible improvements:
+  Implement the hierarchical menu for the categories facet to narrow down to the deeper levels of hierarchicalCategories
   Possibly modify the "no keyword" search to display the most popular and highest ranked items in the index
   
 ### Questions (0.5 hrs)

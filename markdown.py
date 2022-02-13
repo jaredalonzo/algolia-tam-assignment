@@ -64,11 +64,22 @@ print(f'connecting to algolia app index: {ALGOLIA_INDEX_NAME}')
 client = SearchClient.create(ALGOLIA_APP_ID, ALGOLIA_API_KEY)
 index = client.init_index(ALGOLIA_INDEX_NAME)
 
-#request_options = {
-#  'autoGenerateObjectIDIfNotExist': True,
-#  'readTimeout': 20,
-#  'writeTimeout': 20,
-#}
+# Assignment Part Three: Improve Relevance
+index.set_settings({
+  'searchableAttributes': [
+    'name',
+    'description'
+  ],
+  'customRanking': [
+    'desc(rating)',
+    'desc(popularity)'
+  ],
+  'attributesForFaceting': [
+    'searchable(brand)',
+    'categories',
+    'price_range'
+  ]
+})
 
 print('pushing index data')
 res = index.save_objects(new_object)
