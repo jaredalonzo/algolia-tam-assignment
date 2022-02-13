@@ -32,6 +32,7 @@ Implemented a python script (markdown.py) that parses the products.json data and
 I've added the option to change the path to the json index [-p, --path], category string [-c, --cateogy], and markdown percentage [-m, --markdown] to the script.
 
 Some assumptions and possible improvements:
+  The camera category is a little ambigious. I've gone ahead and assumed that the requirement is asking for the whole Cameras & Camcorders category (which has subcategories that do not necessarily have camera products e.g. Digital Camera Accessories, Camera Bags & Cases, and Digital Photo Frames)
   I've removed the values in the .env file for privacy. The script is assuming that the reviewer will have an algolia application and supply their own API keys and index name.
   Possibly add a new key:value on the products index for the sale/markdown price for comparisons?
   Possibly add some more parameters to the script to be able to pick a specific key in the index to markdown (instead of limiting it to "category".
