@@ -3,6 +3,7 @@
 I have implemented this assignment in a docker container. To start:
 
 * Clone the repo and open it using a docker container
+* Add .env variable and your own App ID, API key, and Index name
 * Run the markdown.py script to process and transform the products.json index
 * Front-end app:
   * Run npm install
