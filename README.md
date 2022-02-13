@@ -2,11 +2,11 @@
 
 I have implemented this assignment in a docker container. To start:
 
-Clone the repo and open it using a docker container
-Run the markdown.py script to process and transform the products.json index
-Front-end app:
-  Run npm install
-  Run npm start
+* Clone the repo and open it using a docker container
+* Run the markdown.py script to process and transform the products.json index
+* Front-end app:
+  * Run npm install
+  * Run npm start
 
 # Algolia TAM Assignment 
   
